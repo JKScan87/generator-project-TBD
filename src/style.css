@@ -18,21 +18,33 @@ h1 {
   color: #272044;
 }
 
+.form-container {
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 15px 20px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
+}
+
 .container {
   margin: 120px auto;
   max-width: 600px;
 }
 
-form {
-  padding: 30px;
-  background-color: white;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  border-radius: 10px;
-  display: flex;
-}
-
 .instructions {
   padding: 16px;
+  font-size: 16px;
   border: 1px solid rgba (39, 33, 66, 0.5);
   width: 80%;
   border-radius: 50px;
@@ -51,12 +63,17 @@ form {
 }
 
 .poem {
+  display: none;
   font-size: 16px;
   background-color: white;
   padding: 20px;
   line-height: 2;
   border-left: 3px solid rgb(104, 12, 127);
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
